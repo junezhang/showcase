@@ -1,0 +1,4 @@
+# Ignore Project files
+
+# Ignore Desktop Services Store
+.DS_Store
