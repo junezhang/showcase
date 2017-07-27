@@ -5,12 +5,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master-dist/dist/css/patternfly.min.css" />
-    <link rel="stylesheet" href="http://www.patternfly.org/assets/css/patternfly-site.min.css">
-		<!-- <link rel="stylesheet" href="dist/styles/patternfly.min.css" />
-    <link rel="stylesheet" href="dist/styles/patternfly-site.min.css"> -->
+    <!-- <link rel="stylesheet" href="http://www.patternfly.org/assets/css/patternfly-site.min.css"> -->
+		<!-- <link rel="stylesheet" href="dist/styles/patternfly.min.css" />-->
+    <link rel="stylesheet" href="dist/styles/patternfly-site.min.css">
     <link rel="stylesheet" href="dist/styles/patternfly-showcase.css">
 	</head>
-<body onload="PR.prettyPrint()">
+<body class="showcase">
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -21,15 +21,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" id="logo" title="open interface project" href="/">PatternFly | open interface project</a>
+					<div class="navbar-brand">
+						<a id="logo" title="PatternFly Showcase" href="index.html">
+							PATTERNFLY-<span class="secondary-logo">SHOWCASE</span>
+						</a>
+					</div>
         </div>
         <div class="navbar-collapse navbar-collapse-pf-site collapse">
           <ul id="menu-primary" class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">Get Started</a>
+              <a href="index.html">Get Started</a>
             </li>
             <li>
-              <a href="/pattern-library/">Modules</a>
+              <a href="/pattern-library/">Components</a>
             </li>
             <li class="active">
               <a href="contribute.html">Contribute</a>
@@ -42,20 +46,20 @@
 			          <i class="fa fa-th-large" aria-hidden="true"></i>
 			        </a>
 			        <ul class="dropdown-menu">
-			          <li>
-			            <a href="#">PatternFly Angular 1</a>
+								<li>
+			            <a href="http://www.patternfly.org/angular-patternfly/#/api/">PatternFly Angular 1</a>
 			          </li>
 								<li>
-			            <a href="#">PatternFly-ng</a>
+			            <a href="https://rawgit.com/patternfly/patternfly-ng/master-dist/dist-demo/#/">PatternFly-ng</a>
 			          </li>
 								<li>
-			            <a href="#">PatternFly Web Component</a>
+			            <a href="https://patternfly-webcomponents.github.io/components.html">PatternFly Web Component</a>
 			          </li>
 								<li>
-			            <a href="#">PatternFly React</a>
+			            <a href="https://rawgit.com/patternfly/patternfly-react/gh-pages/index.html">PatternFly React</a>
 			          </li>
 								<li>
-			            <a href="#">PatternFly CSS</a>
+			            <a href="http://www.patternfly.org/patternfly-css/">PatternFly CSS</a>
 			          </li>
 
 			        </ul>
@@ -64,24 +68,70 @@
         </div>
       </div>
     </nav>
+		<nav class="navbar navbar-sidebar navbar-primary">
+			<ul>
+				<li class="primary-menu">
+					<a href="">Menu</a>
+					<ul>
+						<li>
+              <a href="index.html">Get Started</a>
+            </li>
+            <li>
+              <a href="#">Components</a>
+            </li>
+            <li class="active">
+              <a href="contribute.html">Contribute</a>
+            </li>
+            <li>
+              <a href="https://github.com/patternfly/angular-patternfly">Github</a>
+            </li>
+						<li>
+							<a class="collapsed" role="button" data-toggle="collapse" href="#patternfly-showcases">PatternFly Showcases</a>
+              <ul class="collapse" id="patternfly-showcases">
+								<li>
+			            <a href="http://www.patternfly.org/angular-patternfly/#/api/">PatternFly Angular 1</a>
+			          </li>
+								<li>
+			            <a href="https://rawgit.com/patternfly/patternfly-ng/master-dist/dist-demo/#/">PatternFly-ng</a>
+			          </li>
+								<li>
+			            <a href="https://patternfly-webcomponents.github.io/components.html">PatternFly Web Component</a>
+			          </li>
+								<li>
+			            <a href="https://rawgit.com/patternfly/patternfly-react/gh-pages/index.html">PatternFly React</a>
+			          </li>
+								<li>
+			            <a href="http://www.patternfly.org/patternfly-css/">PatternFly CSS</a>
+			          </li>
+			        </ul>
+			      </li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
   </header>
 
 	<div class="showcase-content showcase-contribute">
+		<!-- <div class="contribute-banner">
+			<div class="container">
+				<img src="dist/img/howtocontribute.svg" alt="">
+			</div>
+		</div> -->
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<h2>How to contribute</h2>
 
 					<p>
-						If you're reading this, you're awesome! Thank you for helping us make this project great and being a part of the PatternFly community. Here are a few guidelines that will help you along the way.
+						<i>(Taking PatternFly-Angular as an example)</i> <br>If you're reading this, you're awesome! Thank you for helping us make this project great and being a part of the PatternFly community. Here are a few guidelines that will help you along the way.
 					</p>
 
 					<h3>Asking Questions</h3>
 					<p>For how-to questions and other non-issues, please use the following ways instead of Github issues. </p>
 					<ul>
-						<li>IRC - <a href="http://webchat.freenode.net/?channels=#patternfly">freenode #patternfly</a></li>
+						<li>IRC - <a href="http://webchat.freenode.net/?channels=#patternfly">freenode #patternfly-angular</a></li>
 						<li>Slack - <a href="patternfly.slack.com">patternfly.slack.com</a> #general</li>
-						<li>Mailing List - <a href="mailto:patternfly@redhat.com">Subscribe to our mailing list</a> to participate or follow a variety of discussions on both technical and design topics. Older threads are found in the <a href="https://www.redhat.com/archives/patternfly/">archive</a>.
+						<li>Mailing List - <a href="mailto:patternfly-angular@redhat.com">Subscribe to our mailing list</a> to participate or follow a variety of discussions on both technical and design topics. Older threads are found in the <a href="https://www.redhat.com/archives/patternfly/">archive</a>.
 </li>
 					</ul>
 
@@ -111,18 +161,18 @@
 					<p>Please create a new branch from an up to date master on your fork. </p>
 					<ol>
 						<li>Fork the <a href="https://github.com/patternfly/patternfly">PatternFly repository on Github</a></li>
-						<li>Clone your fork to you local machine: git clone git@github.com:&lt;yourname&gt;/patternfly.git</li>
-						<li>Create a branch: git checkout -b my-topic-branch</li>
-						<li>Make your changes, commit, then push to github with: git push origin my-topic-branch</li>
+						<li>Clone your fork to you local machine: <i class="code">git clone git@github.com:&lt;yourname&gt;/patternfly-angular.git</i></li>
+						<li>Create a branch: <i class="code">git checkout -b my-topic-branch</i></li>
+						<li>Make your changes, commit, then push to github with: <i class="code">git push origin my-topic-branch</i></li>
 						<li>Visit github and make your pull request.</li>
 					</ol>
 
 					<h4>Coding style</h4>
 					<p>Please follow the coding style of the current code base.
-					See http://codeguide.patternfly.org/.</p>
+					See <a href="http://codeguide.patternfly.org/">http://codeguide.patternfly.org</a><p>
 
 					<h3>Roadmap</h3>
-					<p>To get a sense of where PatternFly is heading, or for ideas on where you could contribute, take a look at the roadmap.</p>
+					<p>To get a sense of where PatternFly is heading, or for ideas on where you could contribute, take a look at the <a href="https://blog.patternfly.org/the-patternfly-roadmap/">roadmap</a>.</p>
 
 
 				</div>
@@ -157,14 +207,13 @@
 	  </div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-	<script src="https://rawgit.com/patternfly/patternfly/master-dist/dist/js/patternfly.min.js"></script>
-	<script src='https://rawgit.com/tcollard/google-code-prettify/v1.0.4/bin/prettify.min.js'></script>
+	<script src="dist/js/jquery-3.2.1.min.js"></script>
+	<script src='dist/js/bootstrap.min.js'></script>
+	<script src="dist/js/patternfly.min.js"></script>
 	<script type="text/javascript" >
-		$(document).ready(function(){
-			prettyPrint();
-		});
+		$('.navbar-toggle').click(function(){
+			$('.navbar-sidebar').toggleClass("open");
+		})
 	</script>
 </body>
 </html>
