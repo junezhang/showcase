@@ -254,6 +254,11 @@
 .showcase header .dropdown-menu > li:last-child > a {
   border-width: 0;
 }
+.showcase header .dropdown > a:focus,
+.showcase header .dropdown > a:hover,
+.showcase header .dropdown > a:active {
+  background-color: transparent !important;
+}
 .showcase .navbar-sidebar {
   background: #292e33 url(../img/grid-sidebar.png) no-repeat 50% 100%;
   border: 0;
