@@ -238,6 +238,8 @@
     .dropdown-menu > li:last-child > a {
       border-width: 0;
     }
+    .dropdown > a:link,
+    .dropdown > a:visited,
     .dropdown > a:focus,
     .dropdown > a:hover,
     .dropdown > a:active
@@ -550,67 +552,60 @@
     }
   }
   .banner {
-  background: #010101;
-  background: url(../img/grid-right.svg) no-repeat right bottom, linear-gradient(to bottom,#2B2B2B 0,#010101 100%);
-  min-height: 350px;
-  @media (min-width: @screen-lg) {
-    background-position:right bottom;
-  }
-  color: #e4e4e4;
-  @media (max-width: @screen-md) {
-    .logos {
-      display: none;
+    background: #010101;
+    background: url(../img/grid-right.svg) no-repeat right bottom, linear-gradient(to bottom,#2B2B2B 0,#010101 100%);
+    min-height: 350px;
+    @media (min-width: @screen-lg) {
+      background-position:right bottom;
     }
-  }
-  @media (max-width: @screen-xs) {
+    color: #e4e4e4;
+    @media (max-width: @screen-md) {
+      .logos {
+        display: none;
+      }
+    }
+    @media (max-width: @screen-xs) {
+      .buttons-btn {
+        display: block;
+      }
+    }
+    margin: 0;
+    padding: 90px 0 30px;
+    position: relative;
+    h1 {
+      color: #3bb1dc;
+    }
+    h1 + p,
+    div + p {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    .buttons {
+      margin: 40px 0;
+    }
     .buttons-btn {
-      display: block;
+      text-align: center;
+      padding: 10px 20px;
+      margin: 10px 5px 0 0;
+      border: solid 1px @color-pf-white;
+      color: @color-pf-white;
+      i {
+        margin-right: 10px;
+        font-size: 19px;
+      }
+    }
+    .buttons-active {
+      background: @color-pf-white;
+      color: @color-pf-blue;
+    }
+    .logos {
+      margin-top: 10%;
+      text-align: center;
+      img {
+        width: 300px;
+      }
     }
   }
-  margin: 0;
-  padding: 90px 0 30px;
-  position: relative;
-  h1 {
-    color: #3bb1dc;
-  }
-  h1 + p,
-  div + p {
-    font-size: 12px;
-    margin-top: 20px;
-  }
-  .buttons {
-    margin: 40px 0;
-  }
-  .buttons-btn {
-    text-align: center;
-    padding: 10px 20px;
-    margin: 10px 5px 0 0;
-    border: solid 1px @color-pf-white;
-    color: @color-pf-white;
-    i {
-      margin-right: 10px;
-      font-size: 19px;
-    }
-  }
-  .buttons-active {
-    background: @color-pf-white;
-    color: @color-pf-blue;
-  }
-  .logos {
-    margin: 15% 0;
-    width: 100%;
-    text-align: center;
-    img {
-      width: 90%;
-    }
-  }
-}
-  .banner-contribute{
-  background: url(../img/contribute-bg.svg) no-repeat 80% bottom, linear-gradient(to bottom,#F2F2F2 0,#F2F2F2 100%);
-  p {
-    color: @color-pf-black;
-  }
-}
   .showcase-content {
     margin-bottom: 20px;
     word-wrap: break-word;

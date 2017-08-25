@@ -254,6 +254,8 @@
 .showcase header .dropdown-menu > li:last-child > a {
   border-width: 0;
 }
+.showcase header .dropdown > a:link,
+.showcase header .dropdown > a:visited,
 .showcase header .dropdown > a:focus,
 .showcase header .dropdown > a:hover,
 .showcase header .dropdown > a:active {
@@ -608,18 +610,11 @@
   color: #0088ce;
 }
 .showcase .banner .logos {
-  margin: 15% 0;
-  width: 100%;
+  margin-top: 10%;
   text-align: center;
 }
 .showcase .banner .logos img {
-  width: 90%;
-}
-.showcase .banner-contribute {
-  background: url(../img/contribute-bg.svg) no-repeat 80% bottom, linear-gradient(to bottom, #F2F2F2 0, #F2F2F2 100%);
-}
-.showcase .banner-contribute p {
-  color: #030303;
+  width: 300px;
 }
 .showcase .showcase-content {
   margin-bottom: 20px;
