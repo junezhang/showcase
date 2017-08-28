@@ -235,21 +235,30 @@
         }
       }
     }
-    .dropdown-menu > li > a {
-      border-color: #ddd;
-      border-style: solid;
-      border-width: 0 0 1px 0;
-      padding: 5px 10px;
+    // .dropdown-menu > li > a {
+    //   border-color: #ddd;
+    //   border-style: solid;
+    //   border-width: 0 0 1px 0;
+    //   padding: 5px 10px;
+    // }
+    // .dropdown-menu > li:last-child > a {
+    //   border-width: 0;
+    // }
+    @media (min-width: 768px){
+      .navbar-utility .applauncher-pf .dropdown-menu {
+          margin-top: 0;
+      }
     }
-    .dropdown-menu > li:last-child > a {
-      border-width: 0;
+    .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::after,
+    .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::before {
+      right: 10px;
     }
     .dropdown > a:link,
     .dropdown > a:visited,
     .dropdown > a:focus,
     .dropdown > a:hover,
     .dropdown > a:active
-     {
+    {
       background-color: transparent !important;
     }
   }

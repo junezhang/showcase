@@ -245,14 +245,14 @@
   -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
 }
-.showcase header .dropdown-menu > li > a {
-  border-color: #ddd;
-  border-style: solid;
-  border-width: 0 0 1px 0;
-  padding: 5px 10px;
+@media (min-width: 768px) {
+  .showcase header .navbar-utility .applauncher-pf .dropdown-menu {
+    margin-top: 0;
+  }
 }
-.showcase header .dropdown-menu > li:last-child > a {
-  border-width: 0;
+.showcase header .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::after,
+.showcase header .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::before {
+  right: 10px;
 }
 .showcase header .dropdown > a:link,
 .showcase header .dropdown > a:visited,
