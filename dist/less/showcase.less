@@ -2,7 +2,6 @@
 @import "dependencies/bootstrap/mixins.less";
 @import "dependencies/font-awesome/less/variables.less";
 @import "dependencies/patternfly/variables.less";
-@import "dependencies/patternfly/mixins.less";
 
 @fa-font-path:                      "dependencies/patternfly/dist/fonts";
 @font-path:                         "dependencies/patternfly/dist/fonts";
@@ -13,7 +12,7 @@
 
 
 
-header {
+.showcase  > header {
   + .container-fluid {
     padding-bottom: 50px; // Sticky footer
     padding-top: 20px;
@@ -21,15 +20,15 @@ header {
   }
 
   .navbar.navbar-default {
-    background: #040404 !important;
-    border-bottom: 0 !important;
+    background: #040404;
+    border-bottom: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
     border-top: 2px solid #32a6d7;
     font-size: @font-size-base + 1;
     margin-bottom: 0;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     .navbar-brand {
       background: url(../img/patternfly-logo.svg) 0 50% no-repeat;
       font-size: 13px;
@@ -101,14 +100,14 @@ header {
     }
     .navbar-right {
       @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-        float: none !important;
+        float: none;
         margin-right: 0;
       }
       > li {
         &.active {
           > a, &:hover > a {
-            background: transparent !important;
-            color: #3bb1dc !important;
+            background: transparent;
+            color: #3bb1dc;
           }
         }
         &:hover {
@@ -161,7 +160,7 @@ header {
       }
     }
   }
-
+}
 
   @media (min-width: 768px){
     .navbar-utility .applauncher-pf .dropdown-menu {
@@ -180,8 +179,7 @@ header {
   {
     background-color: transparent !important;
   }
-}
-.navbar-sidebar {
+.showcase .navbar-sidebar {
   background: @navbar-sidebar-bg-color url(../img/grid-sidebar.png) no-repeat 50% 100%;
   border: 0;
   border-radius: 0;
@@ -195,7 +193,7 @@ header {
   width: @navbar-sidebar-width;
   z-index: (@zindex-navbar-fixed - 1);
   @media (min-width: @screen-md) {
-    box-shadow: none !important;
+    box-shadow: none;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -212,7 +210,7 @@ header {
       right: 0;
       &:active,
       &:hover {
-        background: rgba(92, 103, 112, 0.5) !important;
+        background: rgba(92, 103, 112, 0.5);
       }
       &:focus {
         background: transparent;
@@ -227,15 +225,15 @@ header {
   }
   .navbar-right {
     //@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-      float: none !important;
+      float: none;
       margin-left: 0px;
       margin-right: 5px;
     //}
     > li {
       &.active {
         > a, &:hover > a {
-          background: transparent !important;
-          color: #3bb1dc !important;
+          background: transparent;
+          color: #3bb1dc;
         }
       }
       &:hover {
@@ -402,7 +400,7 @@ header {
     }
   }
 }
-.banner {
+.showcase > .banner {
   background: #010101;
   background: url(../img/grid-right.svg) no-repeat right bottom, linear-gradient(to bottom,#2B2B2B 0,#010101 100%);
   min-height: 350px;
@@ -423,11 +421,11 @@ header {
   margin: 0;
   padding: 90px 0 30px;
   position: relative;
-  h1 {
+  > h1 {
     color: #3bb1dc;
   }
-  h1 + p,
-  div + p {
+  > h1 + p,
+  > div + p {
     font-size: 12px;
     margin-top: 20px;
   }
@@ -531,7 +529,7 @@ footer {
     }
   }
   p {
-    font-size: @font-size-small !important;
+    font-size: @font-size-small;
     margin-bottom: 0;
   }
   .social {
