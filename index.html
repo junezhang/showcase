@@ -228,7 +228,11 @@
 	<script src="dist/js/jquery-3.2.1.min.js"></script>
 	<script src='dist/js/bootstrap.min.js'></script>
 	<script src="dist/js/patternfly.min.js"></script>
+	<script src="dist/js/prettify.min.js"></script>
 	<script type="text/javascript" >
+		$(document).ready(function(){
+			prettyPrint();
+		});
 		$('.navbar-toggle').click(function(){
 			$('.navbar-sidebar').toggleClass("open");
 		})

@@ -127,14 +127,17 @@
             color: #fff;
           }
         }
-        @media (min-width: @screen-md) {
-          .home & {
-            &:hover, &.open {
-              background: #252525;
-              background: rgba(0,0,0,.1);
-            }
-          }
-        }
+      }
+      .navbar-utility .applauncher-pf .dropdown-menu {
+          margin-top: 0;
+      }
+      .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::after,
+      .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::before {
+        right: 10px;
+      }
+      .dropdown > a:link
+      {
+        background-color: transparent !important;
       }
     }
     .navbar-toggle {
@@ -161,24 +164,6 @@
     }
   }
 }
-
-  @media (min-width: 768px){
-    .navbar-utility .applauncher-pf .dropdown-menu {
-        margin-top: 0;
-    }
-  }
-  .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::after,
-  .dropdown-kebab-pf .dropdown-menu.dropdown-menu-right::before {
-    right: 10px;
-  }
-  .dropdown > a:link,
-  .dropdown > a:visited,
-  .dropdown > a:focus,
-  .dropdown > a:hover,
-  .dropdown > a:active
-  {
-    background-color: transparent !important;
-  }
 .showcase .navbar-sidebar {
   background: @navbar-sidebar-bg-color url(../img/grid-sidebar.png) no-repeat 50% 100%;
   border: 0;
@@ -219,46 +204,6 @@
         left: 6px;
         &:before {
           content: @fa-var-angle-double-left;
-        }
-      }
-    }
-  }
-  .navbar-right {
-    //@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-      float: none;
-      margin-left: 0px;
-      margin-right: 5px;
-    //}
-    > li {
-      &.active {
-        > a, &:hover > a {
-          background: transparent;
-          color: #3bb1dc;
-        }
-      }
-      &:hover {
-        background: #212121;
-        > a {
-          background: transparent;
-          color: #fff;
-        }
-      }
-      > a {
-        color: #eee;
-        padding: 7px 20px;
-        @media (min-width: @screen-md) {
-          padding: 25px 15px;
-        }
-        &:hover {
-          color: #fff;
-        }
-      }
-      @media (min-width: @screen-md) {
-        .home & {
-          &:hover, &.open {
-            background: #252525;
-            background: rgba(0,0,0,.1);
-          }
         }
       }
     }
